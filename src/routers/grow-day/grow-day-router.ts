@@ -27,7 +27,7 @@ growDayRouter.get("", async (request: Request, response: Response) => {
 });
 
 growDayRouter.get(
-  "/:createdById",
+  "/user/:createdById",
   async (request: Request, response: Response) => {
     try {
       if (!request.params.createdById) {
